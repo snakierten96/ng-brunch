@@ -1,0 +1,57 @@
+/* App container styles */
+
+html, body {
+  font-size: 14px;
+}
+
+#wrapper {
+  background-color: whitesmoke;
+  height: 100%;
+}
+
+#container {
+  height: inherit;
+  height: calc( 100% - 64px); /* TODO: hack! fix */
+}
+
+.md-button {
+  text-transform: none;
+}
+
+/* Lineup Styles */
+
+
+#lineup {
+  max-height: 69%;
+}
+
+#lineup md-card-content {
+  overflow-y: auto;  
+}
+
+
+#lineup md-list-item {
+  border-bottom: 1px rgba(0,0,0,0.12) solid;
+}
+
+#lineup md-card-actions > div {
+  padding-left: 8px;
+}
+
+#lineup md-card-actions md-input-container {
+  margin: 0;
+}
+
+#lineup md-card-actions .md-button {
+  height: 36px;
+}
+
+/* Dining and tables */
+
+#dining {
+  overflow-y: auto;
+}
+
+#dining md-card {
+  min-height: 200px;
+}

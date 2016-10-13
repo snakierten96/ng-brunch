@@ -1,0 +1,25 @@
+<md-toolbar class="md-toolbar-tools md-whiteframe-4dp">
+  <md-button class="md-icon-button" ng-click="$ctrl.toggleMenu()">
+    <md-icon>menu</md-icon>
+  </md-button>
+  <h1>TrendyBrunch</h1>
+</md-toolbar>
+
+<md-sidenav class="md-sidenav-left md-whiteframe-4dp"
+            md-component-id="left">
+  
+</md-sidenav>
+
+<div id="container" layout="column">
+  <div id="top" layout="row" flex="70">
+    <div flex="33">
+      <tb-lineup></tb-lineup>
+    </div>
+    <div id="dining" layout="row" layout-wrap flex="66">
+      
+    </div>
+  </div>
+  <div id="bottom" layout="row" flex="30">
+    
+  </div>
+</div>

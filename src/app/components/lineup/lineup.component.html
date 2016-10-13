@@ -1,0 +1,33 @@
+<md-card id="lineup">
+  <md-card-header>
+    <md-card-header-text>
+      <md-headline>Lineup</md-headline>
+    </md-card-header-text>
+  </md-card-header>
+  <md-card-content>
+    <md-list>
+      <md-list-item ng-repeat="item in $ctrl.lineup" ng-click="null">
+        <div class="md-list-item-text" layout="row" flex>
+          <span flex>{{ item.numberOfPeople }}</span>
+          <span flex>{{ item.partyName }}</span>
+        </div>
+        <md-button class="md-icon-button md-secondary md-warn">
+          <md-icon>close</md-icon>
+        </md-button>
+      </md-list-item>
+    </md-list>
+  </md-card-content>
+  <md-card-actions>
+    <div layout="row">
+      <md-input-container>
+        <label>Number of People</label>
+        <input type="number" />
+      </md-input-container>
+      <md-input-container>
+        <label>Party Name</label>
+        <input type="text" />
+      </md-input-container>
+      <md-button class="md-raised md-accent md-secondary">New Party</md-button>
+    </div>
+  </md-card-actions>
+</md-card>
